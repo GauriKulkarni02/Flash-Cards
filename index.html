@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flashcard Quiz App</h1>
+        
+        <!-- Add Flashcard Form -->
+        <div class="form-container">
+            <h2>Add New Flashcard</h2>
+            <form id="flashcard-form">
+                <input type="text" id="question" placeholder="Enter question" required>
+                <input type="text" id="answer" placeholder="Enter answer" required>
+                <button type="submit">Add Flashcard</button>
+            </form>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="quiz-container">
+            <h2>Quiz Mode</h2>
+            <div id="flashcard" class="flashcard">
+                <div class="flashcard-content">
+                    <div class="front">
+                        <p id="display-question">Click Start Quiz to begin!</p>
+                    </div>
+                    <div class="back">
+                        <p id="display-answer"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-controls">
+                <button id="flip-btn">Show Answer</button>
+                <button id="next-btn">Next Card</button>
+                <button id="start-quiz">Start Quiz</button>
+            </div>
+            <div class="score-container">
+                <p>Score: <span id="score">0</span> / <span id="total">0</span></p>
+            </div>
+        </div>
+
+        <!-- Flashcards List -->
+        <div class="flashcards-list">
+            <h2>Your Flashcards</h2>
+            <div id="flashcards-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
